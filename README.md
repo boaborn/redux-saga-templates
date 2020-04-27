@@ -7,9 +7,11 @@
 * Use case: Getting / fetching a list of data from an API.
 
 * Example:
+```javascript
 function* watchGetUsersRequest(){
     yield takeEvery(action.Types.GET_USERS_REQUEST, getUsers);
 }
+```
 
 "takeLatest"
 Use this when: There's the potential for a redux action to be dispatched multiple times in a short period and could potentially initiate the running of multiple instances of the same saga - use takeLatest to ONLY take the latest currently running saga for the associated dispatched redux action.
