@@ -2,11 +2,11 @@
 ## Examples of when to use various Redux Saga keywords and techniques
 
 "takeEvery"
-Use this when: You want to watch for EVERY time a specific redux action was dispatched.
+* Use this when: You want to watch for EVERY time a specific redux action was dispatched.
 
-Use case: Getting / fetching a list of data from an API.
+* Use case: Getting / fetching a list of data from an API.
 
-Example:
+* Example:
 function* watchGetUsersRequest(){
     yield takeEvery(action.Types.GET_USERS_REQUEST, getUsers);
 }
