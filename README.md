@@ -35,7 +35,7 @@ function* watchGetLoggedInUserRequest(){
 * Accepting a payment. Generally you don't want to be able to accept multiple, simultaneous payments - you'd want to wait for the current transaction to complete before allowing the ability to accept another payment.
 
 Example:
-```javascript
+* ```javascript
 function* watchDeleteUserRequest(){
   while(true){
     const {userId} = yield take(action.Types.DELETE_USER_REQUEST);
