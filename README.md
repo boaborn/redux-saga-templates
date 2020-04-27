@@ -20,7 +20,7 @@ function* watchGetUsersRequest(){
 
 * If you have a complex app that queries the same API endpoint from multiple components at the same time - for example if you have a navbar that displays the currently logged in user's name, but the user is viewing a 'settings' page to view their personal details meaning both the navbar and the settings page will query the same API endpoint - you'll generally want to take the latest call for that data.
 
-Example:
+* Example:
 ```javascript
 function* watchGetLoggedInUserRequest(){
     yield takeLatest(action.Types.GET_LOGGED_IN_USER_REQUEST, getLoggedInUser);
@@ -34,8 +34,7 @@ function* watchGetLoggedInUserRequest(){
 
 * Accepting a payment. Generally you don't want to be able to accept multiple, simultaneous payments - you'd want to wait for the current transaction to complete before allowing the ability to accept another payment.
 
-Example:
-* 
+* Example:
 ```javascript
 function* watchDeleteUserRequest(){
   while(true){
@@ -52,7 +51,7 @@ function* watchDeleteUserRequest(){
 
 * Calling a promise within a worker saga that queries an API endpoint.
 
-Examples:
+* Examples:
 ```javascript
 function* deleteUser({userId}){
   try{
