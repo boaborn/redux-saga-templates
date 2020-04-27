@@ -1,5 +1,5 @@
-Redux Saga Cheat Sheet
-Examples of when to use various Redux Saga keywords and techniques
+# Redux Saga Cheat Sheet
+## Examples of when to use various Redux Saga keywords and techniques
 
 "takeEvery"
 Use this when: You want to watch for EVERY time a specific redux action was dispatched.
